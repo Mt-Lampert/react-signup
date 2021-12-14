@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/Berichte/</loc>
+    <loc>https://mt-lampert.github.io/react-signup/Berichte/</loc>
     <lastmod>2021-12-14T20:21:21+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/Planung/</loc>
+    <loc>https://mt-lampert.github.io/react-signup/Planung/</loc>
     <lastmod>2021-12-14T19:29:22+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://mt-lampert.github.io/react-signup/</loc>
     <lastmod>2021-12-13T13:09:19+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://mt-lampert.github.io/react-signup/tags/</loc>
   </url>
 </urlset>
