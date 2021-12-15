@@ -11,7 +11,8 @@
 
 
     <meta name="description" content="Hier finden sich alle Berichte über dieses Projekt in &ldquo;chronologisch absteigender&rdquo; Reihenfolge. Das heißt: Die aktuellsten Berichte sind ganz oben, die älteren weiter unten.
-2021-12-14 20:23    Es ist mir, glaube ich gelungen, Hauptprojekt und Doku-Projekt erfolgreich zusammen zu bringen. Macht mich sehr stolz und glücklich!">
+Einrichten der Doku-Seite    2021-12-15 07:51:    Ja, es ist mir gestern abend tatsächlich gelungen, Hauptprojekt und Doku-Projekt erfolgreich zusammen zu bringen. Nun sollte ich berichten, wie ich das geschafft habe (nach viel Try And Error):
+  Die Sammelwebsite https://mt-lampert.github.io/ einrichten wie in der offiziellen Dokumentation beschrieben.">
 
 
 
@@ -270,12 +271,87 @@
         <h1>Berichte</h1>
         <p>Hier finden sich alle Berichte über dieses Projekt in &ldquo;chronologisch absteigender&rdquo; Reihenfolge. Das heißt: Die aktuellsten Berichte sind ganz oben, die älteren weiter unten.</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="2021-12-14-2023">
-        2021-12-14 20:23
-        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Berichte/#2021-12-14-2023" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 2021-12-14 20:23" href="#2021-12-14-2023">
+    <h2 id="einrichten-der-doku-seite">
+        Einrichten der Doku-Seite
+        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Berichte/#einrichten-der-doku-seite" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Einrichten der Doku-Seite" href="#einrichten-der-doku-seite">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
+</div><div class="gdoc-page__anchorwrap">
+    <h4 id="2021-12-15-0751">
+        2021-12-15 07:51:
+        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Berichte/#2021-12-15-0751" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 2021-12-15 07:51:" href="#2021-12-15-0751">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><p>Ja, es ist mir gestern abend tatsächlich gelungen, Hauptprojekt und Doku-Projekt erfolgreich zusammen zu bringen. Nun sollte ich berichten, wie ich das geschafft habe (nach viel Try And Error):</p>
+<ol>
+<li>
+<p>Die Sammelwebsite <a class="gdoc-markdown__link" href="https://mt-lampert.github.io/">https://mt-lampert.github.io/</a> einrichten wie in der <a class="gdoc-markdown__link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">offiziellen Dokumentation</a> beschrieben. Das ist nötig, um der Dokumentation eine &ldquo;Heimat&rdquo; im Web zu geben.</p>
+</li>
+<li>
+<p>Im Hauptprojekt den Ordner <code>docs</code> einrichten. Dort werden die statischen Webseiten der Dokumentation abgespeichert.</p>
+</li>
+<li>
+<p>Im Hauptprojekt den Git-Branch <code>DOKU</code> anlegen. Der wird im weiteren Verlauf noch sehr wichtig werden.</p>
+</li>
+<li>
+<p>Im Hauptprojekt Die Doku-Seite nach Anweisung der <a class="gdoc-markdown__link" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source">offiziellen Dokumentation</a> anlegen.</p>
+<ul>
+<li>benutzter Branch: <code>DOKU</code>(deshalb wurde er eingerichtet)</li>
+<li>benutztes Verzeichnis: <code>docs</code> (deshalb wurde auch das eingerichtet)</li>
+</ul>
+</li>
+<li>
+<p>Im Doku-Projekt die Dokumentation bis zur &ldquo;ersten Veröffentlichungsreife&rdquo; anlegen, committen und pushen.</p>
+</li>
+<li>
+<p>Im Doku-Projekt folgende Änderung in <code>config.toml</code> vornehmen, committen und pushen:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://mt-lampert.github.io/react-signup/&#39;</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;de-de&#39;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;React Signup Documentation&#39;</span>
+</code></pre></div><p>Damit werden beim Kompilieren alle internen Links auf die <code>baseURL</code> &ldquo;geeicht&rdquo; und kommen da an, wo man sie erwartet.</p>
+</li>
+<li>
+<p>Die Dokumentation mit Hilfe von <em>Hugo</em> neu rendern:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># alle moeglichen Altlasten vermeiden</span>
+$ rm -rf public/*
+<span class="c1"># rendern!</span>
+$ hugo
+</code></pre></div></li>
+<li>
+<p>Im Hauptprojekt in den Branch <code>DOKU</code> wechseln:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">$ git checkout -b DOKU
+</code></pre></div></li>
+<li>
+<p>Im Hauptprojekt den Inhalt des <code>public</code>-Verzeichnisses aus dem Doku-Verzeichnis nach <code>/docs</code> kopieren:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">$ rm -rf docs/*
+$ cp -R -f ../react-signup-documentation/public/* docs/
+</code></pre></div></li>
+<li>
+<p>committen und pushen.</p>
+</li>
+<li>
+<p>Das Ergebnis im Browser überprüfen</p>
+</li>
+<li>
+<p>Im Hauptprojekt den <code>DOKU</code>-Branch verlassen.</p>
+</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="erste-erfolgsmeldung">
+        Erste Erfolgsmeldung
+        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Berichte/#erste-erfolgsmeldung" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Erste Erfolgsmeldung" href="#erste-erfolgsmeldung">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><div class="gdoc-page__anchorwrap">
+    <h4 id="2021-12-14----2023">
+        2021-12-14 &ndash; 20:23
+        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Berichte/#2021-12-14----2023" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 2021-12-14 &ndash; 20:23" href="#2021-12-14----2023">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
 </div><p>Es ist mir, glaube ich gelungen, Hauptprojekt und Doku-Projekt erfolgreich zusammen zu bringen. Macht mich sehr stolz und glücklich!</p>
 
     </article>
