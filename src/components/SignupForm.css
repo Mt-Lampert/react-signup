@@ -1,8 +1,91 @@
+.signup-fields {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: stretch;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+
+    grid-template-areas:
+        "name name name lastname lastname lastname"
+        "email email email email email email"
+        "street street street street street number"
+        "plz plz city city city city"
+        "button button button button button button"
+}
+
+.signup-fields div {
+    padding-top: rem;
+}
+
+.signup-fields input {
+    width: 100%;
+}
+
+.signup-input__vorname {
+    /* padding-right: 0.5em; */
+    width: 95%;
+    grid-area: name;
+}
+
+.signup-input__nachname {
+    /* padding-left: 0.5em; */
+    grid-area: lastname;
+}
+
+.signup-input__email {
+    /* margin-top: 0.5em; */
+    grid-area: email;
+}
+
+.signup-input__street {
+    /* margin-top: 0.5em; */
+    padding-right: 0.5em;
+    width: 95%;
+    grid-area: street;
+}
+
+.signup-input__hsnr {
+    /* margin-top: 0.5em; */
+    grid-area: number;
+}
+
+.signup-input__plz {
+    /* margin-top: 0.5em; */
+    width: 92%;
+    /* padding-right: 2em; */
+    grid-area: plz;
+}
+
+.signup-input__city {
+    /* margin-top: 0.5em; */
+    grid-area: city;
+}
+
+.signup-button {
+    margin: 0 auto;
+    /* margin-top: 2.5em; */
+    width: 102%;
+    text-align: center;
+    grid-area: button;
+}
+
+
 
 .signup-portrait__frame {
+    margin: 0px auto;
     max-width: 150px;
 }
 
+.signup-portrait__frame div {
+    text-align: center;
+}
+
 .signup-portrait__frame img {
+    border-radius: 50%;
     width: 100%;
 }
