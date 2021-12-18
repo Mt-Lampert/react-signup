@@ -1,91 +1,93 @@
+.signup-form {
+  padding: 3rem 2.5rem;
+  border: 1px solid #cfcfcf;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 430px;
+  border-radius: 35px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .signup-fields {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 2rem;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 2rem;
 
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    justify-items: stretch;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: stretch;
 
-    grid-template-areas:
-        "name name name lastname lastname lastname"
-        "email email email email email email"
-        "street street street street street number"
-        "plz plz city city city city"
-        "button button button button button button"
+  gap: 1rem 0.8rem;
+
+  grid-template-areas:
+    "name name name lastname lastname lastname"
+    "email email email email email email"
+    "street street street street street number"
+    "plz plz city city city city"
+    "button button button button button button";
 }
 
 .signup-fields div {
-    padding-top: rem;
+  width: 100%;
 }
 
 .signup-fields input {
-    width: 100%;
+  box-sizing: border-box;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  background-color: #efefef;
+  width: 100%;
 }
 
 .signup-input__vorname {
-    /* padding-right: 0.5em; */
-    width: 95%;
-    grid-area: name;
+  grid-area: name;
 }
 
 .signup-input__nachname {
-    /* padding-left: 0.5em; */
-    grid-area: lastname;
+  grid-area: lastname;
 }
 
 .signup-input__email {
-    /* margin-top: 0.5em; */
-    grid-area: email;
+  grid-area: email;
 }
 
 .signup-input__street {
-    /* margin-top: 0.5em; */
-    padding-right: 0.5em;
-    width: 95%;
-    grid-area: street;
+  grid-area: street;
 }
 
 .signup-input__hsnr {
-    /* margin-top: 0.5em; */
-    grid-area: number;
+  grid-area: number;
 }
 
 .signup-input__plz {
-    /* margin-top: 0.5em; */
-    width: 92%;
-    /* padding-right: 2em; */
-    grid-area: plz;
+  grid-area: plz;
 }
 
 .signup-input__city {
-    /* margin-top: 0.5em; */
-    grid-area: city;
+  grid-area: city;
 }
 
 .signup-button {
-    margin: 0 auto;
-    /* margin-top: 2.5em; */
-    width: 102%;
-    text-align: center;
-    grid-area: button;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background-color: #aaa;
+  border-radius: 5px;
+  color: #fff;
+  grid-area: button;
 }
 
-
-
 .signup-portrait__frame {
-    margin: 0px auto;
-    max-width: 150px;
+  margin: 0px auto;
+  max-width: 150px;
 }
 
 .signup-portrait__frame div {
-    text-align: center;
+  text-align: center;
 }
 
 .signup-portrait__frame img {
-    border-radius: 50%;
-    width: 100%;
+  border-radius: 50%;
+  width: 100%;
 }
