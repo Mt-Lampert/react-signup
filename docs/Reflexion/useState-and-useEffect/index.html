@@ -2,7 +2,6 @@
 <html lang="en" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.89.4" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,12 @@
 
 
 
-    <meta name="description" content="Dies hier ist die offizielle Dokumentation fuer dieses React-Projekt.">
+    <meta name="description" content="Beim Rumprobieren mit Ronas Version des Projektes kam es zu überraschenden Effekten: State-Variablen, die wir mit setX() upgedatet haben, hatten direkt nach dem Update immer noch ihren alten Wert:
+function changeHandler(event) { // alter Wert: &#34;hi&#34;  // target.value hat &#34;his&#34;  setFoo(event.target.value) // wird NICHT ausgefuehrt!  // OBWOHL foo jetzt eigentlich  // den Wert &#34;his&#34; haben muesste!  if (foo.length &gt; 2) { changeButton() } } Das Problem ist, dass setFoo() asynchron ausgefuehrt wird.">
 
 
 
-    <title>React Signup Documentation</title>
+    <title>UseState braucht UseEffect | React Signup Documentation</title>
 
     <link rel="icon" type="image/svg+xml" href="/react-signup/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/react-signup/favicon/favicon-32x32.png">
@@ -23,15 +23,19 @@
 
     
 
-    <meta property="og:title" content="Startseite" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mt-lampert.github.io/react-signup/" />
+    <meta property="og:title" content="UseState braucht UseEffect" />
+<meta property="og:description" content="Beim Rumprobieren mit Ronas Version des Projektes kam es zu überraschenden Effekten: State-Variablen, die wir mit setX() upgedatet haben, hatten direkt nach dem Update immer noch ihren alten Wert:
+function changeHandler(event) { // alter Wert: &#34;hi&#34;  // target.value hat &#34;his&#34;  setFoo(event.target.value) // wird NICHT ausgefuehrt!  // OBWOHL foo jetzt eigentlich  // den Wert &#34;his&#34; haben muesste!  if (foo.length &gt; 2) { changeButton() } } Das Problem ist, dass setFoo() asynchron ausgefuehrt wird." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mt-lampert.github.io/react-signup/Reflexion/useState-and-useEffect/" /><meta property="article:section" content="Reflexion" />
+<meta property="article:published_time" content="2021-12-19T08:18:59+01:00" />
+<meta property="article:modified_time" content="2021-12-19T08:18:59+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Startseite"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="UseState braucht UseEffect"/>
+<meta name="twitter:description" content="Beim Rumprobieren mit Ronas Version des Projektes kam es zu überraschenden Effekten: State-Variablen, die wir mit setX() upgedatet haben, hatten direkt nach dem Update immer noch ihren alten Wert:
+function changeHandler(event) { // alter Wert: &#34;hi&#34;  // target.value hat &#34;his&#34;  setFoo(event.target.value) // wird NICHT ausgefuehrt!  // OBWOHL foo jetzt eigentlich  // den Wert &#34;his&#34; haben muesste!  if (foo.length &gt; 2) { changeButton() } } Das Problem ist, dass setFoo() asynchron ausgefuehrt wird."/>
 
 
     <script src="/react-signup/js/darkmode-ce906ea916.min.js"></script>
@@ -56,13 +60,41 @@
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
     
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "React Signup Documentation",
-    "url": "https:\/\/mt-lampert.github.io\/react-signup\/",
-    "thumbnailUrl": "https:\/\/mt-lampert.github.io\/react-signup\/brand.svg"
+    "@type": "TechArticle",
+    "articleSection": "Reflexion",
+    "name": "UseState braucht UseEffect",
+    "headline": "UseState braucht UseEffect",
+    "alternativeHeadline": "",
+    "description": "Beim Rumprobieren mit Ronas Version des Projektes kam es zu überraschenden Effekten: State-Variablen, die wir mit setX() upgedatet haben, hatten direkt nach dem Update immer noch ihren alten Wert:\nfunction changeHandler(event) { \/\/ alter Wert: \u0026#34;hi\u0026#34;  \/\/ target.value hat \u0026#34;his\u0026#34;  setFoo(event.target.value) \/\/ wird NICHT ausgefuehrt!  \/\/ OBWOHL foo jetzt eigentlich  \/\/ den Wert \u0026#34;his\u0026#34; haben muesste!  if (foo.length \u0026gt; 2) { changeButton() } } Das Problem ist, dass setFoo() asynchron ausgefuehrt wird.",
+    "inLanguage": "en",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/mt-lampert.github.io\/react-signup\/Reflexion\/useState-and-useEffect\/"
+    },
+    "copyrightHolder" : "React Signup Documentation",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-12-19T08:18:59.00Z",
+    "datePublished": "2021-12-19T08:18:59.00Z",
+    "dateModified": "2021-12-19T08:18:59.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "React Signup Documentation",
+        "url": "https://mt-lampert.github.io/react-signup/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/mt-lampert.github.io\/react-signup\/brand.svg",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "url" : "https:\/\/mt-lampert.github.io\/react-signup\/Reflexion\/useState-and-useEffect\/",
+    "wordCount" : "177",
+    "genre" : [ ]
 }
 </script>
 
@@ -267,7 +299,7 @@
             
             
                 <span class="flex">
-                    <a href="/react-signup/Reflexion/useState-and-useEffect/" class="gdoc-nav__entry ">
+                    <a href="/react-signup/Reflexion/useState-and-useEffect/" class="gdoc-nav__entry is-active">
                         UseState braucht UseEffect
                     </a>
                 </span>
@@ -355,7 +387,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Startseite</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/react-signup/' href='/react-signup/'><span itemprop='name'>Startseite</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/react-signup/Reflexion/' href='/react-signup/Reflexion/'><span itemprop='name'>Reflexion</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>UseState braucht UseEffect</span><meta itemprop='position' content='4' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -366,8 +414,39 @@
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Startseite</h1>
-        <p>Dies hier ist die offizielle Dokumentation fuer <a class="gdoc-markdown__link" href="https://github.com/Mt-Lampert/react-signup">dieses React-Projekt</a>.</p>
+        <h1>UseState braucht UseEffect</h1>
+        <p>Beim Rumprobieren mit Ronas Version des Projektes kam es zu überraschenden Effekten: State-Variablen, die wir mit <code>setX()</code> upgedatet haben, hatten direkt nach dem Update immer noch ihren alten Wert:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">changeHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// alter Wert: &#34;hi&#34;
+</span><span class="c1"></span>   <span class="c1">// target.value hat &#34;his&#34;
+</span><span class="c1"></span>   <span class="nx">setFoo</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+
+   <span class="c1">// wird NICHT ausgefuehrt!
+</span><span class="c1"></span>   <span class="c1">// OBWOHL foo jetzt eigentlich 
+</span><span class="c1"></span>   <span class="c1">// den Wert &#34;his&#34; haben muesste!
+</span><span class="c1"></span>   <span class="k">if</span> <span class="p">(</span><span class="nx">foo</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">changeButton</span><span class="p">()</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Das Problem ist, dass <code>setFoo()</code> <em>asynchron</em> ausgefuehrt wird. D.h. die If-Abfrage findet statt, während sich <code>setFoo()</code> in der &ldquo;Warteschleife&rdquo; befindet <em>und das State-Update noch aussteht!</em> Deshalb &ldquo;passiert nix&rdquo;.</p>
+<p>Die Lösung heißt <code>useEffect()</code>. Dieser Hook wird von React bekanntlich immer direkt nach einem Re-Rendering ausgeführt, und <em>genau dort</em> muessen wir die if-Abfrage platzieren:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">MyComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kr">const</span> <span class="p">[</span><span class="nx">foo</span><span class="p">,</span> <span class="nx">setFoo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+   
+   <span class="c1">// Siehe Erklaerung unten!
+</span><span class="c1"></span>   <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">foo</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+       <span class="nx">changeButton</span><span class="p">()</span>
+     <span class="p">}</span> 
+   <span class="p">}[</span><span class="nx">foo</span><span class="p">]);</span>
+
+   <span class="kd">function</span> <span class="nx">changeHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">setFoo</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+   <span class="p">}</span>
+
+  <span class="c1">// ...
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></div><p>Jetzt wird die If-Abfrage <em>DIREKT</em> nach dem Re-Rendering ausgeführt, aber nur dann, wenn <code>foo</code> mit Hilfe von <code>setFoo()</code> einen neuen Wert bekommen hat. Das ist genau das, was wir wollen!</p>
 
     </article>
 
