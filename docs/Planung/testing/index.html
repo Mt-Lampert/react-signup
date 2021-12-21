@@ -10,12 +10,14 @@
 
 
 
-    <meta name="description" content="Hier findet alles statt, was es zur Planung zu sagen gibt.
-Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung dient diese Rubrik in der Dokumentation.">
+    <meta name="description" content="Die wichtigste Regel:
+ Testen muss geplant sein!
+ Einfach drauf los und alles testen, was Beine hat &ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.
+Unit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern.">
 
 
 
-    <title>Planung | React Signup Documentation</title>
+    <title>Testing | React Signup Documentation</title>
 
     <link rel="icon" type="image/svg+xml" href="/react-signup/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/react-signup/favicon/favicon-32x32.png">
@@ -23,15 +25,23 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
 
     
 
-    <meta property="og:title" content="Planung" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mt-lampert.github.io/react-signup/Planung/" />
+    <meta property="og:title" content="Testing" />
+<meta property="og:description" content="Die wichtigste Regel:
+ Testen muss geplant sein!
+ Einfach drauf los und alles testen, was Beine hat &ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.
+Unit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mt-lampert.github.io/react-signup/Planung/testing/" /><meta property="article:section" content="Planung" />
+<meta property="article:published_time" content="2021-12-21T07:09:54+01:00" />
+<meta property="article:modified_time" content="2021-12-21T07:09:54+01:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Planung"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Testing"/>
+<meta name="twitter:description" content="Die wichtigste Regel:
+ Testen muss geplant sein!
+ Einfach drauf los und alles testen, was Beine hat &ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.
+Unit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern."/>
 
 
     <script src="/react-signup/js/darkmode-ce906ea916.min.js"></script>
@@ -56,6 +66,44 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
     
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "TechArticle",
+    "articleSection": "Planung",
+    "name": "Testing",
+    "headline": "Testing",
+    "alternativeHeadline": "",
+    "description": "Die wichtigste Regel:\n Testen muss geplant sein!\n Einfach drauf los und alles testen, was Beine hat \u0026ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.\nUnit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern.",
+    "inLanguage": "en",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/mt-lampert.github.io\/react-signup\/Planung\/testing\/"
+    },
+    "copyrightHolder" : "React Signup Documentation",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-12-21T07:09:54.00Z",
+    "datePublished": "2021-12-21T07:09:54.00Z",
+    "dateModified": "2021-12-21T07:09:54.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "React Signup Documentation",
+        "url": "https://mt-lampert.github.io/react-signup/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/mt-lampert.github.io\/react-signup\/brand.svg",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "url" : "https:\/\/mt-lampert.github.io\/react-signup\/Planung\/testing\/",
+    "wordCount" : "728",
+    "genre" : [ ]
+}
+</script>
+
 
     
 
@@ -159,7 +207,7 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
             
             
                 <span class="flex">
-                    <a href="/react-signup/Planung/" class="gdoc-nav__entry is-active">
+                    <a href="/react-signup/Planung/" class="gdoc-nav__entry ">
                         Planung
                     </a>
                 </span>
@@ -193,7 +241,7 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
             
             
                 <span class="flex">
-                    <a href="/react-signup/Planung/testing/" class="gdoc-nav__entry ">
+                    <a href="/react-signup/Planung/testing/" class="gdoc-nav__entry is-active">
                         Testing
                     </a>
                 </span>
@@ -392,7 +440,15 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/react-signup/' href='/react-signup/'><span itemprop='name'>Startseite</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Planung</span><meta itemprop='position' content='3' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/react-signup/' href='/react-signup/'><span itemprop='name'>Startseite</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/react-signup/Planung/' href='/react-signup/Planung/'><span itemprop='name'>Planung</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Testing</span><meta itemprop='position' content='4' /></li>
+    
+
     
 
     
@@ -405,10 +461,139 @@ Die eigentliche Planung findet auf dieser Seite statt, aber für die Erklärung 
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Planung</h1>
-        <p>Hier findet alles statt, was es zur Planung zu sagen gibt.</p>
-<p>Die eigentliche Planung findet auf <a class="gdoc-markdown__link" href="https://github.com/Mt-Lampert/react-signup/projects/1">dieser Seite</a> statt, aber für die Erklärung dient diese Rubrik in der Dokumentation.</p>
+        <h1>Testing</h1>
+        <h4>2021-12-21</h4>
+        <p>Die wichtigste Regel:</p>
+<blockquote>
+<p>Testen muss geplant sein!</p>
+</blockquote>
+<p>Einfach drauf los und alles testen, was Beine hat &ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.</p>
+<p>Unit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern.</p>
+<p>Wie müssen wir uns einen Integrations-Test vorstellen? In der Regel läuft er nach folgendem Schema ab:</p>
+<ol>
+<li>Das Parent-Component wird gerendert. Dabei wird ein virtuelles <code>window.document</code>, d.h. ein DOM im Speicher aufgebaut &ndash; so wie im Browser; nur bleibt dieses <code>window.document</code> vollständig im Speicher und wird nicht im Browser angezeigt.</li>
+<li>Mit Hilfe von <code>screen</code> werden Node-Elemente aus <code>window.document</code> ausgewählt.</li>
+<li>Die ausgewählten Node-Elemente werden mit Hilfe von Events verändert. Dadurch ändert sich auch der Inhalt von <code>window.document</code>.</li>
+<li>Jetzt werden erneut Node-Elemente aus <code>window.document</code> mit Hilfe von <code>screen</code> ausgewählt &ndash; nämlich die, bei denen wir erwarten, dass die Events von gerade eben sie in eine bestimmte Richtung verändert haben (Neue Werte, neue Formatierung, vielleicht sogar Auftauchen oder Verschwinden)</li>
+<li>Mit Hilfe von <code>expect()</code> überprüfen wir nun, ob sich die Änderungen tatsächlich wie erwünscht eingestellt haben oder nicht.</li>
+</ol>
+<p>Grafisch sieht das etwa so aus:</p>
 
+
+<script defer src="/react-signup/js/mermaid-1f2acc086a.min.js"></script>
+<script defer src="/react-signup/js/mermaid-loader-1bd1515cbf.min.js"></script>
+
+
+
+<pre class="gdoc-mermaid mermaid">
+graph TD
+A[render] -->|init| L{window.document}
+L --> B(screen)
+B -->|gets| D(el-1)
+B -->|gets| E(el-2)
+B -->|gets| F(el-3)
+D -->|fireEvent| G{update document}
+E -->|fireEvent| G
+F -->|fireEvent| G
+G -->H(screen)
+H -->|gets Elements| I(expect)
+I -->|checks elements| J{show Result}
+</pre>
+
+<div class="gdoc-page__anchorwrap">
+    <h2 id="vollständiges-beispiel">
+        Vollständiges Beispiel
+        <a data-clipboard-text="https://mt-lampert.github.io/react-signup/Planung/testing/#vollständiges-beispiel" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Vollständiges Beispiel" href="#vollst%c3%a4ndiges-beispiel">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>Das folgende Beispiel nimmt neue Einträge in einer To-Do-App vor und überprüft, ob sie wie erwartet in der To-Do-Liste angezeigt werden:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Datei: Todo.spec.js
+</span><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">render</span><span class="p">,</span> <span class="nx">screen</span><span class="p">,</span> <span class="nx">fireEvent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;@testing-library/react&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Todo</span> <span class="nx">from</span> <span class="s2">&#34;../Todo&#34;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">BrowserRouter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;react-router-dom&#34;</span><span class="p">;</span>
+
+<span class="c1">// Wir brauchen dieses Component, weil in einem Child-Component von
+</span><span class="c1">// &lt;Todo /&gt; Routing stattfindet. Dem muessen wir Rechnung tragen.
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">MockTodo</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">Todo</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="cm">/**
+</span><span class="cm"> * @func  addTask Helfer-Funktion, mit der man neue Eintraege in die To-Do-Liste simulieren kann.
+</span><span class="cm"> * @arg   tasks   Array mit neuen Eintraegen fuer die ToDo-Liste
+</span><span class="cm"> */</span>
+<span class="kr">const</span> <span class="nx">addTask</span> <span class="o">=</span> <span class="p">(</span><span class="nx">tasks</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// `screen` waehlt Elemente immer aus dem jetzt aktuellen window.document aus.
+</span><span class="c1"></span>  <span class="c1">// nach einem Rendering werden sich dort hoffentlich entsprechende Elemente finden.
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">inputElement</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">getByPlaceholderText</span><span class="p">(</span><span class="sr">/Add a new task here.../i</span><span class="p">);</span>
+  <span class="kr">const</span> <span class="nx">buttonElement</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s2">&#34;button&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="sr">/Add/i</span> <span class="p">});</span>
+
+  <span class="nx">tasks</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">task</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// Change-Event fuer inputElement ausloesen
+</span><span class="c1"></span>    <span class="c1">// und task in target.value eintragen
+</span><span class="c1"></span>    <span class="nx">fireEvent</span><span class="p">.</span><span class="nx">change</span><span class="p">(</span><span class="nx">inputElement</span><span class="p">,</span> <span class="p">{</span> <span class="nx">target</span><span class="o">:</span> <span class="p">{</span> <span class="nx">value</span><span class="o">:</span> <span class="nx">task</span> <span class="p">}</span> <span class="p">});</span>
+    <span class="c1">// Click-Event fuer buttonElement ausloesen
+</span><span class="c1"></span>    <span class="nx">fireEvent</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">buttonElement</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="s2">&#34;creates new todo list item after adding one in the add component&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// &lt;MockTodo /&gt; wird gerendert und window.document initialisiert
+</span><span class="c1"></span>  <span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MockTodo</span> <span class="p">/&gt;);</span>
+  <span class="c1">// Neuer Eintrag in die Todo-Liste =&gt; update von window.document
+</span><span class="c1"></span>  <span class="nx">addTask</span><span class="p">([</span><span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">]);</span>
+  <span class="c1">// Auswahl des Node-Elements, das sich durch addTask geaendert hat
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="sr">/Go Grocery Shopping/i</span><span class="p">);</span>
+  <span class="c1">// Test: Ist es im DOM vorhanden oder nicht?
+</span><span class="c1"></span>  <span class="nx">expect</span><span class="p">(</span><span class="nx">divElement</span><span class="p">).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="s2">&#34;adds multiple items of same kind if added in a likewise way&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// &lt;MockTodo /&gt; wird gerendert und window.document initialisiert
+</span><span class="c1"></span>  <span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MockTodo</span> <span class="p">/&gt;);</span>
+  <span class="c1">// Drei identische neue Eintraege in die Todo-Liste =&gt; update von window.document
+</span><span class="c1"></span>  <span class="nx">addTask</span><span class="p">([</span>
+    <span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">,</span>
+  <span class="p">]);</span>
+  <span class="c1">// Auswahl des Node-Elements, das sich durch addTask geaendert hat
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">divElements</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">queryAllByText</span><span class="p">(</span><span class="sr">/Go Grocery Shopping/i</span><span class="p">);</span>
+  <span class="c1">// Test: Haben die drei identischen Eintraege tatsaechlich zu drei identischen
+</span><span class="c1"></span>  <span class="c1">// Eintraegen in der ToDo-Liste gefuehrt?
+</span><span class="c1"></span>  <span class="nx">expect</span><span class="p">(</span><span class="nx">divElements</span><span class="p">.</span><span class="nx">length</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="s2">&#34;creates a new todo list entry without &#39;todo-item-done&#39; class&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// &lt;MockTodo /&gt; wird gerendert und window.document initialisiert
+</span><span class="c1"></span>  <span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MockTodo</span> <span class="p">/&gt;);</span>
+  <span class="c1">// Neuer Eintrag in die Todo-Liste =&gt; update von window.document
+</span><span class="c1"></span>  <span class="nx">addTask</span><span class="p">([</span><span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">]);</span>
+  <span class="c1">// Auswahl des Node-Elements, das sich durch addTask geaendert hat
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="sr">/Go Grocery Shopping/i</span><span class="p">);</span>
+  <span class="c1">// Test: FEHLT divElement tatsaechlich die CSS-Klasse &#34;todo-item-active&#34;?
+</span><span class="c1"></span>  <span class="nx">expect</span><span class="p">(</span><span class="nx">divElement</span><span class="p">).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toHaveClass</span><span class="p">(</span><span class="s2">&#34;todo-item-done&#34;</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="s2">&#34;adds the &#39;todo-item-done&#39; class to a todo list item when clicked&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// &lt;MockTodo /&gt; wird gerendert und window.document initialisiert
+</span><span class="c1"></span>  <span class="nx">render</span><span class="p">(&lt;</span><span class="nt">MockTodo</span> <span class="p">/&gt;);</span>
+  <span class="c1">// Neuer Eintrag in die Todo-Liste =&gt; update von window.document
+</span><span class="c1"></span>  <span class="nx">addTask</span><span class="p">([</span><span class="s2">&#34;Go Grocery Shopping&#34;</span><span class="p">]);</span>
+  <span class="c1">// Auswahl des Node-Elements, das sich durch addTask geaendert hat
+</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">divElement</span> <span class="o">=</span> <span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="sr">/Go Grocery Shopping/i</span><span class="p">);</span>
+  <span class="c1">// Click auf `divElement` simulieren
+</span><span class="c1"></span>  <span class="nx">fireEvent</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">divElement</span><span class="p">);</span>
+  <span class="c1">// Test: wurde die CSS-Klasse &#34;todo-item-active&#34; 
+</span><span class="c1"></span>  <span class="c1">// fuer `divElement` tatsaechlich hinzugefuegt?
+</span><span class="c1"></span>  <span class="nx">expect</span><span class="p">(</span><span class="nx">divElement</span><span class="p">).</span><span class="nx">toHaveClass</span><span class="p">(</span><span class="s2">&#34;todo-item-done&#34;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
     </article>
 
                 

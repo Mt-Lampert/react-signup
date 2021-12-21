@@ -7,5 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <lastBuildDate>Tue, 14 Dec 2021 19:29:22 +0100</lastBuildDate><atom:link href="https://mt-lampert.github.io/react-signup/Planung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing</title>
+      <link>https://mt-lampert.github.io/react-signup/Planung/testing/</link>
+      <pubDate>Tue, 21 Dec 2021 07:09:54 +0100</pubDate>
+      
+      <guid>https://mt-lampert.github.io/react-signup/Planung/testing/</guid>
+      <description>Die wichtigste Regel:
+ Testen muss geplant sein!
+ Einfach drauf los und alles testen, was Beine hat &amp;ndash; so funktioniert es nicht! Was funktioniert, ist dort testen, wo wir uns unsicher fühlen: Neue Features, State-Updates, DOM-Updates usw.
+Unit-Tests, wo wir nur einzelne Components testen, werden wir aller Wahrscheinlichkeit nach nicht brauchen. Was wir ganz sicher brauchen, sind Integrations-Tests. Dort pruefen wir, wie gut ein Parent-Component mit seinen Child-Components zusammenarbeitet und harmoniert: Ob props in den Child-Components richtig umgesetzt werden, ob Binding richtig funktioniert, ob State-Updates auch auf dem Bildschirm die gewünschten Resultate liefern.</description>
+    </item>
+    
   </channel>
 </rss>
